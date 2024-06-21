@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FlowerShop.Common</id>
+    <version>1.0.0</version>
+    <authors>FlowerShop.Common</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="b2a72d2faae23470f3b7d8a342fa8358db68ab4f" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Dora_\Desktop\Mono-DI\FlowerShop\FlowerShop.Common\bin\Debug\net8.0\FlowerShop.Common.runtimeconfig.json" target="lib\net8.0\FlowerShop.Common.runtimeconfig.json" />
+    <file src="C:\Users\Dora_\Desktop\Mono-DI\FlowerShop\FlowerShop.Common\bin\Debug\net8.0\FlowerShop.Common.dll" target="lib\net8.0\FlowerShop.Common.dll" />
+  </files>
+</package>
