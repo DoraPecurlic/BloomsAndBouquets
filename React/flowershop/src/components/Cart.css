@@ -1,0 +1,84 @@
+.cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-content h2 {
+  margin-bottom: 20px;
+}
+
+.cart-content ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.cart-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Povećani razmak između stavki */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.update-button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.update-button:hover {
+  background: #ff4081;
+}
+
+.remove-button {
+    background: #ff4081;
+    color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.remove-button:hover {
+  background: #e73370;
+}
+
+.close-button {
+  background: #aaa;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background: #888;
+}
