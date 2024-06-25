@@ -14,9 +14,9 @@ namespace FlowerShop.Repository
 
        
 
-        public async Task<List<String>> GetUserOrders(int userId)
+        public async Task<List<Order>> GetUserOrders(int userId)
         {
-            List<string> userOrders = new List<string>();
+            List<Order> userOrders = new List<Order>();
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 await connection.OpenAsync();
@@ -25,24 +25,24 @@ namespace FlowerShop.Repository
                 {
                     command.Connection = connection;
 
-                    command.CommandText = @"SELECT   o.""Id"",  o.""FlowerType"", o.""Quantity"", ot.""OrderType"" " +
-                        @"FROM ""Order"" o   " +
-                        @"INNER JOIN    ""OrderType"" ot ON o.""OrderTypeId"" = ot.""Id""  WHERE  o.""UserId"" = @UserId ";
+                    command.CommandText = @"SELECT * FROM ""Order""  WHERE ""UserId"" = @UserId ";
 
-                    command.Parameters.AddWithValue("@UserId", userId);
+                     command.Parameters.AddWithValue("@UserId", userId);
 
 
                     using (var reader = await command.ExecuteReaderAsync() ) 
                     {
                         while (await reader.ReadAsync())
                         {
-                            var orderId = reader.GetInt32(0);
-                            var flowerType = reader.GetString(1);
-                            var quantity = reader.GetInt32(2);
-                            var orderType = reader.GetString(3);
+                            var order = new Order
+                            {
+                                Id = reader.GetInt32(0),
+                                FlowerType = reader.GetString(1),
+                                Quantity = reader.GetInt32(2),
+                                OrderTypeId = reader.GetInt32(3)
+                            };
 
-                            var orderInfo = $"Your order id: {orderId}, Flower: {flowerType}, Quantity: {quantity}, Order type: {orderType}";
-                            userOrders.Add(orderInfo);
+                            userOrders.Add(order);
                         }
                     }
                     

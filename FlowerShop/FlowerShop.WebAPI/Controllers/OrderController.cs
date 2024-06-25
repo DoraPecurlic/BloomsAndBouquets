@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using FlowerShop.Service;
 using FlowerShop.Models;
 using FlowerShop.Service.Common;
+using Microsoft.AspNetCore.Cors;
 
 namespace FlowerShop.WebAPI.Controllers
 {
@@ -22,17 +23,17 @@ namespace FlowerShop.WebAPI.Controllers
 
 
 
-
+   
         [HttpGet(Name = "GetUserOrders")]
         public async Task<IActionResult> GetUserOrders(int userId)
         {
-            List<String> orders = new List<String>();
+            List<Order> userOrders = new List<Order>();
             try
             {
-                orders = await orderService.GetUserOrders(userId);
+                userOrders = await orderService.GetUserOrders(userId);
 
 
-                return Ok(orders);
+                return Ok(userOrders);
             }
             catch (Exception ex)
             {

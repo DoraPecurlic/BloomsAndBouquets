@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FlowerShop.Repository\FlowerShop.Repository.csproj" />
     <ProjectReference Include="..\FlowerShop.Service.Common\FlowerShop.Service.Common.csproj" />
   </ItemGroup>

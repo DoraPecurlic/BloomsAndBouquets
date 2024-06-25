@@ -14,7 +14,7 @@ namespace FlowerShop.Service
         }
 
 
-        public async Task<List<string>> GetUserOrders(int userId)
+        public async Task<List<Order>> GetUserOrders(int userId)
         {
             return await orderRepository.GetUserOrders(userId);
         }

@@ -5,6 +5,9 @@ import SelectionWindow from './components/SelectionWindow';
 import Cart from './components/Cart';
 import './App.css';
 
+import OrderList from './OrderList';
+
+
 const products = [
   { id: 1, title: 'Bouquet', image: <img src={`${process.env.PUBLIC_URL}/images/1.jpg`} alt="Product 1" /> },
   { id: 2, title: 'Box Of Blooms', image: <img src={`${process.env.PUBLIC_URL}/images/2.jpg`} alt="Product 2" /> },
@@ -23,6 +26,8 @@ function App() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [showCart, setShowCart] = useState(false);
   const [notification, setNotification] = useState('');
+
+
 
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem('cart'));
@@ -65,6 +70,9 @@ function App() {
     setSelectedProduct(product);
     setShowCart(false); 
   };
+
+  
+
   const handleCartClick = () => setShowCart(true);
   const handleCartClose = () => setShowCart(false);
 
@@ -118,6 +126,7 @@ function App() {
           onUpdate={handleUpdate}
         />
       )}
+      <OrderList userId={2} />
       {notification && <div className="notification">{notification}</div>}
     </div>
   );
