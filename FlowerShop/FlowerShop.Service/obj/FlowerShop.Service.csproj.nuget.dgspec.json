@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj": {}
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj",
         "projectName": "FlowerShop.Models",
-        "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj",
+        "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj",
         "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\obj\\",
+        "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -69,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj": {
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj",
         "projectName": "FlowerShop.Repository.Common",
-        "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj",
+        "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj",
         "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\obj\\",
+        "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,77 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
-                "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj",
-        "projectName": "FlowerShop.Repository",
-        "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj",
-        "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Dora_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj"
+              "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
+                "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj"
               }
             }
           }
@@ -188,6 +125,85 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj",
+        "projectName": "FlowerShop.Repository",
+        "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj",
+        "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dora_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -213,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj": {
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
         "projectName": "FlowerShop.Service.Common",
-        "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
+        "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
         "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\obj\\",
+        "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -242,8 +258,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
-                "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj"
+              "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj": {
+                "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Models\\FlowerShop.Models.csproj"
               }
             }
           }
@@ -262,6 +278,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -282,14 +304,14 @@
         }
       }
     },
-    "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj": {
+    "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj",
         "projectName": "FlowerShop.Service",
-        "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj",
+        "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj",
         "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service\\obj\\",
+        "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -311,11 +333,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj": {
-                "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj"
+              "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj": {
+                "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Repository\\FlowerShop.Repository.csproj"
               },
-              "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj": {
-                "projectPath": "C:\\Users\\Dora_\\Desktop\\Mono-DI\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj"
+              "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj": {
+                "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj"
               }
             }
           }
@@ -334,6 +356,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
