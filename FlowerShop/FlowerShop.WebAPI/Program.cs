@@ -4,8 +4,6 @@ using FlowerShop.Service.Common;
 using FlowerShop.Service;
 
 
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("corsapp", builder =>
+    options.AddPolicy("AllowAllOrigins", builder =>
     {
         builder.AllowAnyOrigin()
                .AllowAnyMethod()
@@ -54,7 +52,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseCors("corsapp");
+app.UseCors("AllowAllOrigins");
 
 
 app.UseAuthorization();

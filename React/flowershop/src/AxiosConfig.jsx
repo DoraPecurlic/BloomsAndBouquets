@@ -8,6 +8,7 @@ const axiosInstance = axios.create({
 export async function getOrders(userId){
     try{
         const response = await axiosInstance.get(`/${userId}`);
+        console.log(response.data); // Dodato za proveru
         return response.data;
       }
       catch(error){

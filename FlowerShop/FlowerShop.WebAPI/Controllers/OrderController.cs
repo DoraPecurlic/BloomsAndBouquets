@@ -23,7 +23,7 @@ namespace FlowerShop.WebAPI.Controllers
 
 
 
-   
+        [HttpGet("{userId}")]
         [HttpGet(Name = "GetUserOrders")]
         public async Task<IActionResult> GetUserOrders(int userId)
         {

@@ -39,7 +39,8 @@ namespace FlowerShop.Repository
                                 Id = reader.GetInt32(0),
                                 FlowerType = reader.GetString(1),
                                 Quantity = reader.GetInt32(2),
-                                OrderTypeId = reader.GetInt32(3)
+                                OrderTypeId = reader.GetInt32(3),
+                                UserId = userId
                             };
 
                             userOrders.Add(order);

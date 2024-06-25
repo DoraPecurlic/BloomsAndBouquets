@@ -3,27 +3,30 @@ import { getOrders } from './AxiosConfig';
 
 
 
-function OrderList({ userId }){
+function OrderList({ userId, updateOrders  }){
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
         const fetchOrders = async () => {
+          console.log('Fetching orders for user ID:', userId); 
+
           try {
             const orders = await getOrders(userId);
+            console.log('Fetched orders:', orders); 
             setOrders(orders);
+            updateOrders(orders);
           } catch (error) {
             console.error('Error fetching orders:', error);
           }
         };
     
         fetchOrders();
-      }, [userId]);
+      }, [userId, updateOrders]);
 
       return (
         <div className="order-list">
-          <h2>Orders</h2>
           {orders.length === 0 ? (
-            <p>No orders found for this user.</p>
+            <p>Your cart is empty.</p>
           ) : (
             <ul>
               {orders.map(order => (

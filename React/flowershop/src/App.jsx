@@ -28,6 +28,11 @@ function App() {
   const [notification, setNotification] = useState('');
 
 
+  const [orders, setOrders] = useState([]);  // Novi state za narudžbine
+
+  const updateOrders = (newOrders) => {
+    setOrders(newOrders);
+  };
 
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem('cart'));
@@ -124,9 +129,10 @@ function App() {
           onClose={handleCartClose} 
           onRemove={handleRemove}
           onUpdate={handleUpdate}
+          orders={orders}
         />
       )}
-      <OrderList userId={2} />
+      <OrderList userId={2} updateOrders={updateOrders} />
       {notification && <div className="notification">{notification}</div>}
     </div>
   );
