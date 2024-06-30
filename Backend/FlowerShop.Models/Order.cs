@@ -16,5 +16,7 @@ namespace FlowerShop.Models
 
         public int UserId { get; set; }
 
+        public decimal Price { get; set; }
+
     }
 }

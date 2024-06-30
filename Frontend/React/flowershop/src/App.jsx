@@ -15,7 +15,7 @@ const products = [
   { id: 7, title: 'Single Flower', image: <img src={`${process.env.PUBLIC_URL}/images/7.jpg`} alt="Product 4" /> },
   { id: 5, title: 'Flower Cone', image: <img src={`${process.env.PUBLIC_URL}/images/5.jpg`} alt="Product 5" /> },
   { id: 6, title: 'Flower Vase Arrangement', image: <img src={`${process.env.PUBLIC_URL}/images/6.jpg`} alt="Product 6" /> },
-  { id: 4, title: 'Posy', image: <img src={`${process.env.PUBLIC_URL}/images/4.jpg`} alt="Product 7" /> },
+
 ];
 
 function App() {
