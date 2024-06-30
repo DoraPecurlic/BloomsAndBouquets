@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/tFCUwCalH8=",
+  "dgSpecHash": "K8tp5JwddHQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
+  "projectFilePath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Service.Common\\FlowerShop.Service.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dora_\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\Dora_\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
