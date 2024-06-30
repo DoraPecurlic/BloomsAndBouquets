@@ -23,8 +23,8 @@ namespace FlowerShop.WebAPI.Controllers
 
 
 
-        [HttpGet("{userId}")]
-        [HttpGet(Name = "GetUserOrders")]
+       
+        [HttpGet("{userId}", Name = "GetUserOrders")]
         public async Task<IActionResult> GetUserOrders(int userId)
         {
             List<Order> userOrders = new List<Order>();
@@ -65,10 +65,9 @@ namespace FlowerShop.WebAPI.Controllers
         }
 
 
-        
 
+        [HttpDelete("{id}", Name = "DeleteOrder")]
 
-        [HttpDelete(Name = "DeleteOrder")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
             

@@ -6,7 +6,7 @@ import Cart from './components/Cart';
 import './App.css';
 
 import OrderList from './OrderList';
-
+import { getOrders, deleteOrder } from './AxiosConfig';
 
 const products = [
   { id: 1, title: 'Bouquet', image: <img src={`${process.env.PUBLIC_URL}/images/1.jpg`} alt="Product 1" /> },
@@ -95,6 +95,19 @@ function App() {
     setShowCart(false);  
   };
 
+  const handleDelete = async (orderId) =>{
+    try{
+      await deleteOrder(orderId);
+      const updateOrders = orders.filter(order => order.id !== orderId);
+      setOrders(updateOrders);
+      showNotification('Order deleted successfully!');
+
+    }catch(error){
+      console.error('Error deleting order:', error);
+      showNotification('Error deleting order.');
+    }
+  }
+
   return (
     <div className="App">
       <Header onCartClick={handleCartClick} />
@@ -127,8 +140,9 @@ function App() {
         <Cart 
           cart={cart} 
           onClose={handleCartClose} 
-          onRemove={handleRemove}
+          onRemove={handleDelete}
           onUpdate={handleUpdate}
+          
           orders={orders}
         />
       )}

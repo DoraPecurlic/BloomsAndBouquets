@@ -17,7 +17,7 @@ function Cart({ cart, onClose, onRemove, onUpdate, orders }) {
                       orderTypeId: {order.orderTypeId} - Flower Type: {order.flowerType} - Quantity: {order.quantity}
                       <div className="cart-item-buttons">
                         <button className="update-button" onClick={() => onUpdate(index)}>Update</button>
-                        <button className="remove-button" onClick={() => onRemove(index)}>Remove</button>
+                        <button className="remove-button" onClick={() => onRemove(order.id)}>Remove</button>
                       </div>
                     </li>
                   ))}

@@ -7,8 +7,8 @@ const axiosInstance = axios.create({
 
 export async function getOrders(userId){
     try{
-        const response = await axiosInstance.get(`/${userId}`);
-        console.log(response.data); // Dodato za proveru
+        const response = await axiosInstance.get(`/${userId}`); //https://localhost:7181/Order/2
+        console.log(response.data); 
         return response.data;
       }
       catch(error){
@@ -17,6 +17,14 @@ export async function getOrders(userId){
       }
 };
 
+export async function deleteOrder(orderId){
+  try{
+    const response = await axiosInstance.delete(`/${orderId}`); 
+    return response.data;
+  }catch(error){
+    console.error('Error deleting order:', error)
+  }
+}
 
 
 export default axiosInstance;
