@@ -24,3 +24,7 @@ CREATE TABLE "Order"(
 	FOREIGN KEY ("UserId") REFERENCES "User"("Id")
 
 );
+
+
+ALTER TABLE "Order"
+ADD COLUMN "Price" DECIMAL(10, 2);
