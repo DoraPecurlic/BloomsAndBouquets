@@ -14,7 +14,7 @@ function Cart({ cart, onClose, onRemove, onUpdate, orders }) {
                 <ul>
                   {orders.map((order, index) => (
                     <li key={index} className="cart-item">
-                      orderTypeId: {order.orderTypeId} - Flower Type: {order.flowerType} - Quantity: {order.quantity}
+                      orderTypeId: {order.orderTypeId} - Flower Type: {order.flowerType} - Quantity: {order.quantity} - Price: {order.price}€
                       <div className="cart-item-buttons">
                         <button className="update-button" onClick={() => onUpdate(index)}>Update</button>
                         <button className="remove-button" onClick={() => onRemove(order.id)}>Remove</button>

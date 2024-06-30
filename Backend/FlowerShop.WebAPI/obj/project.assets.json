@@ -1209,11 +1209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
       "projectName": "FlowerShop.WebAPI",
-      "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Dora_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1235,8 +1235,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj": {
-              "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.Service\\FlowerShop.Service.csproj"
+            "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Service\\FlowerShop.Service.csproj": {
+              "projectPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Service\\FlowerShop.Service.csproj"
             }
           }
         }
