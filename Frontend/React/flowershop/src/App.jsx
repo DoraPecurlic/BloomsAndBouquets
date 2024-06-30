@@ -45,6 +45,23 @@ function App() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const orders = await getOrders(2); // Proslijedi userId ovdje, npr. 2
+        setOrders(orders);
+      } catch (error) {
+        console.error('Error fetching orders:', error);
+      }
+    };
+
+    if (showCart) {
+      fetchOrders();
+    }
+  }, [showCart]);
+
+
   const addToCart = () => {
     const newCartItem = { product: selectedProduct, type: flowerType, quantity: flowerQuantity };
     if (selectedIndex !== null) {
@@ -144,9 +161,10 @@ function App() {
           onUpdate={handleUpdate}
           
           orders={orders}
+          
         />
+        
       )}
-      <OrderList userId={2} updateOrders={updateOrders} />
       {notification && <div className="notification">{notification}</div>}
     </div>
   );

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5F5DB8D-C269-42F7-B967-7A6C916F29B1}|FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F5DB8D-C269-42F7-B967-7A6C916F29B1}|FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj|solutionrelative:flowershop.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A224DEBC-6955-435B-876B-2D8D9A4E1922}|FlowerShop.Repository\\FlowerShop.Repository.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A224DEBC-6955-435B-876B-2D8D9A4E1922}|FlowerShop.Repository\\FlowerShop.Repository.csproj|solutionrelative:flowershop.repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|solutionrelative:flowershop.models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5F5DB8D-C269-42F7-B967-7A6C916F29B1}|FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.webapi\\controllers\\ordertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.models\\ordertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|solutionrelative:flowershop.models\\ordertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5F5DB8D-C269-42F7-B967-7A6C916F29B1}|FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5F5DB8D-C269-42F7-B967-7A6C916F29B1}|FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj|solutionrelative:flowershop.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BDC2C9-C204-4B1F-A559-6B4454C5D71C}|FlowerShop.Models\\FlowerShop.Models.csproj|solutionrelative:flowershop.models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B74EA2EF-6D68-4CB9-ACCA-E3ADC7E30729}|FlowerShop.Repository.Common\\FlowerShop.Repository.Common.csproj|c:\\users\\dora_\\desktop\\bloomsandbouquets\\backend\\flowershop.repository.common\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OrderTypesController.cs",
               "DocumentMoniker": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\Controllers\\OrderTypesController.cs",
               "RelativeDocumentMoniker": "FlowerShop.WebAPI\\Controllers\\OrderTypesController.cs",
@@ -62,8 +62,7 @@
               "RelativeToolTip": "FlowerShop.WebAPI\\Controllers\\OrderTypesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T17:00:12.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T17:00:12.109Z"
             },
             {
               "$type": "Document",
@@ -79,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OrderType.cs",
               "DocumentMoniker": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Models\\OrderType.cs",
               "RelativeDocumentMoniker": "FlowerShop.Models\\OrderType.cs",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "FlowerShop.Models\\OrderType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T08:03:11.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T08:03:11.807Z"
             },
             {
               "$type": "Document",
@@ -104,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "FlowerShop.WebAPI\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\Controllers\\OrderController.cs",
               "RelativeToolTip": "FlowerShop.WebAPI\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAANAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwC0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T22:34:23.504Z",
               "EditorCaption": ""
@@ -149,25 +147,24 @@
               "RelativeToolTip": "FlowerShop.Repository.Common\\IOrderRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T22:33:43.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T22:33:43.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "FlowerShop.Repository\\OrderRepository.cs",
               "ToolTip": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Repository\\OrderRepository.cs",
               "RelativeToolTip": "FlowerShop.Repository\\OrderRepository.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAADwv2cAAABRAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAADwv3wAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T22:33:30.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.Models\\Order.cs",
               "RelativeDocumentMoniker": "FlowerShop.Models\\Order.cs",
