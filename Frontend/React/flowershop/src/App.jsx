@@ -15,7 +15,7 @@ const products = [
   { id: 7, title: 'Single Flower', image: <img src={`${process.env.PUBLIC_URL}/images/7.jpg`} alt="Product 4" /> },
   { id: 5, title: 'Flower Cone', image: <img src={`${process.env.PUBLIC_URL}/images/5.jpg`} alt="Product 5" /> },
   { id: 6, title: 'Flower Vase Arrangement', image: <img src={`${process.env.PUBLIC_URL}/images/6.jpg`} alt="Product 6" /> },
-  { id: 4, title: 'Posy', image: <img src={`${process.env.PUBLIC_URL}/images/4.jpg`} alt="Product 7" /> },
+
 ];
 
 function App() {
@@ -44,6 +44,23 @@ function App() {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
+
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const orders = await getOrders(2); // Proslijedi userId ovdje, npr. 2
+        setOrders(orders);
+      } catch (error) {
+        console.error('Error fetching orders:', error);
+      }
+    };
+
+    if (showCart) {
+      fetchOrders();
+    }
+  }, [showCart]);
+
 
   const addToCart = () => {
     const newCartItem = { product: selectedProduct, type: flowerType, quantity: flowerQuantity };
@@ -144,9 +161,10 @@ function App() {
           onUpdate={handleUpdate}
           
           orders={orders}
+          
         />
+        
       )}
-      <OrderList userId={2} updateOrders={updateOrders} />
       {notification && <div className="notification">{notification}</div>}
     </div>
   );

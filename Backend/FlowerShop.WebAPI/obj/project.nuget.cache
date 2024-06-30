@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m8JDPF0nQFQ=",
+  "dgSpecHash": "XqqXooGHoA0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\FlowerShop\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Dora_\\Desktop\\BloomsAndBouquets\\Backend\\FlowerShop.WebAPI\\FlowerShop.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dora_\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Dora_\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
